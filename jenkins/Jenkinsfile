@@ -3,17 +3,17 @@ pipeline {
     stages {
         stage('---clean---') {
             steps {
-              echo "mvn clean"
+                apt update
             }
         }
         stage('--test--') {
             steps {
-                apt update
+                echo "test"
             }
         }
         stage('--package--') {
             steps {
-#                sh "mvn package"
+                echo "package"
             }
         }
     }
