@@ -18,7 +18,7 @@ pipeline {
         }
         stage('--status--') {
             steps {
-                echo " test "
+                echo " status "
             }
         }
     }
