@@ -3,22 +3,22 @@ pipeline {
     stages {
         stage('---update---') {
             steps {
-                apt update
+                sh 'apt update '
             }
         }
         stage('--install--') {
             steps {
-                echo " test "
+               sh ' echo " install "'
             }
         }
         stage('--run--') {
             steps {
-                echo " package "
+               sh ' echo " run "'
             }
         }
         stage('--status--') {
             steps {
-                echo " status "
+                sh 'echo " status "'
             }
         }
     }
