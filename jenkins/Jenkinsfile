@@ -18,7 +18,7 @@ pipeline {
         }
         stage('--status--') {
             steps {
-                sh 'echo "status"'
+                sh 'echo " status "'
             }
         }
     }
