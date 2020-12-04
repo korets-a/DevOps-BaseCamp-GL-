@@ -1,17 +1,17 @@
 pipeline {
     agent any
     stages {
-        stage('---1---') {
+        stage('---clean---') {
             steps {
                echo "mvn clean"
             }
         }
-        stage('---2---') {
+        stage('--test--') {
             steps {
                 apt update
             }
         }
-        stage('---3---') {
+        stage('--package--') {
             steps {
 #                sh "mvn package"
             }
