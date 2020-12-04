@@ -1,19 +1,24 @@
 pipeline {
     agent any
     stages {
-        stage('---clean---') {
+        stage('---update---') {
             steps {
                 apt update
             }
         }
-        stage('--test--') {
+        stage('--install--') {
             steps {
-                echo "test"
+                echo " test "
             }
         }
-        stage('--package--') {
+        stage('--run--') {
             steps {
-                echo "package"
+                echo " package "
+            }
+        }
+        stage('--status--') {
+            steps {
+                echo " test "
             }
         }
     }
